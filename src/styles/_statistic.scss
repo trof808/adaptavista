@@ -1,0 +1,177 @@
+.statistic {
+  display: flex;
+  margin-top: 25px;
+  flex-grow: 1;
+  align-items: baseline;
+  .statistic-title {
+    font-weight: bold;
+    width: 13%;
+    padding: 15px 0;
+    .subtitle {
+      color: #949494;
+      font-size: 13px;
+    }
+    span {
+      color: #F49530;
+      font-weight: normal;
+      font-size: 15px;
+    }
+    span.run-date {
+      color: #949494;
+      font-size: 13px;
+    }
+  }
+  .statistic-chart-container {
+    width: 425px;
+  }
+}
+
+.statistic-chart-container {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  padding: 15px;
+  justify-content: center;
+  .chart-legend {
+    font-size: 13px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    .legend {
+      display: flex;
+      margin-right: 10px;
+      span {
+        margin-left: 5px;
+      }
+    }
+    i.legend-icon {
+      width: 15px;
+      height: 15px;
+      display: block;
+      background-color: #4f7539;
+      border-radius: 50%;
+    }
+  }
+  .statistic-chart {
+    display: flex;
+    flex-grow: 1;
+    height: 39px;
+    font-size: 13px;
+    .block1 {
+      background-color: #4f7539;
+      flex-direction: column;
+      span {
+        color: #fff;
+      }
+      .block1-chunks {
+        display: flex;
+        width: 100%;
+        position: relative;
+        height: 100%;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        .block1-chunks2 {
+          background-color: rgb(244, 149, 48);
+        }
+      }
+      .block1-chunks > div {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+      }
+    }
+    .block2 {
+      background-color: rgb(235, 103, 98);
+    }
+    .block3 {
+      background-color: rgb(173, 173, 173);
+    }
+    .block4 {
+      background-color: rgba(230, 140, 24, 0.986);
+    }
+    .block {
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      position: relative;
+      .chunks {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        .auto-chunk {
+          background-color: rgba(244, 149, 48, .4);
+          position: relative;
+          .chunk-tooltip {
+            position: absolute;
+            bottom: -110px;
+            background-color: #fff;
+            padding: 8px;
+            box-shadow: 0 0 5px 1px;
+            border-radius: 3px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 100;
+            min-width: 120px;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+            color: #000;
+            span {
+              color: #000 !important;
+              text-align: center;
+              font-size: 12px;
+            }
+            span.test-num {
+              font-size: 22px;
+            }
+            span.sprint-dates {
+              font-weight: normal;
+            }
+          }
+        }
+      }
+    }
+    .block1-full {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .statistic-chart-total {
+      align-items: center;
+      display: flex;
+      font-weight: bold;
+      margin-left: 10px;
+      flex-basis: 30px;
+    }
+  }
+  .block1, .block4, .block2 {
+    margin-right: 2px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .statistic {
+    flex-direction: column;
+    .statistic-title {
+      width: 100%;
+    }
+    .statistic-chart-container {
+      padding: 0;
+      width: 100%;
+    }
+  }
+  .teams-block .teams-charts .teams-auto {
+    height: auto !important;
+  }
+  .teams-block .teams-charts .teams-auto .statistic-title {
+    width: 100% !important;
+  }
+}

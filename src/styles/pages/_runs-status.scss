@@ -1,0 +1,21 @@
+.runs-status-page {
+  .select-input {
+    min-width: 200px;
+    margin-right: 20px;
+  }
+  .test-runs-title {
+    display: block;
+    font-weight: bold;
+  }
+  .search-button {
+    margin-right: 20px;
+  }
+  a.build-link {
+    border-bottom: 1px dashed;
+    color: rgba(0,0,255, .7);
+    font-weight: bold;
+    &:hover {
+      color: rgba(0,0,255, 1);
+    }
+  }
+}

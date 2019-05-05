@@ -1,0 +1,43 @@
+.page-title {
+  font-size: 32px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px 0 0px 25px;
+  .title-link {
+    display: flex;
+    align-items: center;
+  }
+  .left-side {
+    display: flex;
+    align-items: center;
+    .title {
+      display: flex;
+      flex-direction: column;
+      span {
+        font-size: 17px;
+      }
+    }
+  }
+  .right-side {
+    display: flex;
+    flex-basis: 500px;
+    justify-content: space-between;
+    .title-info {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      flex-grow: 1;
+      span {
+        font-size: 14px;
+        font-weight: normal;
+      }
+      span.stat {
+        font-size: 26px;
+        font-weight: bold;
+      }
+    }
+  }
+}

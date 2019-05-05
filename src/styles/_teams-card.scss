@@ -1,0 +1,37 @@
+.teams-block {
+  padding: 1px 15px 15px;
+  margin-top: 15px;
+  .teams-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 22px 0;
+  }
+  .teams-charts {
+    display: flex;
+    justify-content: space-between;
+    .teams-auto {
+      display: flex;
+      height: 64px;
+      width: 80%;
+      align-items: center;
+      .statistic {
+        margin: 0;
+      }
+      .statistic-chart-container {
+        width: 80%;
+      }
+      .statistic-title {
+        width: 20%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+    }
+    .teams-run {
+      display: flex;
+      max-width: 20%;
+      align-items: center;
+      justify-content: flex-end;
+    }
+  }
+}

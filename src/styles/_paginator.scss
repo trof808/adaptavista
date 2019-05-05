@@ -1,0 +1,12 @@
+.paginator {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 15px 25px;
+  span {
+    font-weight: bold;
+  }
+  .paginator-item {
+    margin: auto;
+  }
+}

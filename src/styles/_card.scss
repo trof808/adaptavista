@@ -1,0 +1,24 @@
+.card {
+  margin-bottom: 15px;
+  .card-title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .card-panel {
+    display: block;
+  }
+  .paginator, .card-filters {
+    margin-bottom: 15px;
+    min-height: 53px;
+  }
+  .paginator {
+    padding: 0;
+  }
+  .card-filters > div {
+    margin-right: 20px;
+  }
+  .expansion-panel:hover {
+    background-color: rgba(89, 168, 61, .17);
+    transition: .5s;
+  }
+}

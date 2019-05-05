@@ -1,0 +1,22 @@
+.labels {
+  display: flex;
+  justify-content: space-around;
+}
+.label {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: auto;
+}
+.label.on {
+  background-color: rgba(50, 207, 50, 0.6);
+  border: 2px solid rgba(50, 207, 50, 1);
+}
+.label.off {
+  background-color: rgba(255, 46, 46, 0.6);
+  border: 2px solid rgba(255, 46, 46, 1);
+}
+.label.disabled {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(0, 0, 0, 0.3);
+}

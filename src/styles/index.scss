@@ -1,0 +1,59 @@
+@import './_grid.scss';
+@import './_app.scss';
+@import './_card.scss';
+@import './_paginator.scss';
+@import './_statistic.scss';
+@import './_info-page.scss';
+@import './teams-card.scss';
+@import './snackbar.scss';
+@import './select.scss';
+@import './page-title.scss';
+
+//common components stypes
+@import './common-components/main-menu';
+@import './common-components/label';
+@import './common-components/table';
+@import './common-components/select';
+
+//pages
+@import './pages/runs-status';
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial sans-serif;
+    height: auto;
+    background-color: rgba(0,0,0,0.03);
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+div#root {
+  height: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.divider {
+  height: inherit;
+  width: 1px;
+  background: #bbb;
+}
+
+@media only screen and (min-width: 60em) {
+  .container {
+    width: 95%;
+    max-width: 108rem;
+  }
+}

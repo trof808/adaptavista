@@ -1,0 +1,133 @@
+.MuiTableHead-root-54 {
+  font-weight: bold;
+}
+
+.tableRow:nth-of-type(odd) {
+  background-color: rgba(0,0,0,.04);
+  transition: .2s;
+}
+
+th.status-cell {
+  width: 64px;
+  padding: 10px 0px 10px 25px;
+}
+
+td.status-cell {
+  padding: 9px;
+  width: 5px;
+}
+
+.search-input {
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 4px 12px;
+  max-width: 500px;
+}
+
+.toolbar {
+  position: -webkit-sticky;
+  position: sticky !important;
+  top: 0;
+  background-color: #fff;
+  box-shadow: 0px 2px 2px -3px;
+  z-index: 1000;
+}
+
+.table-footer {
+  position: sticky;
+  bottom: 0;
+  background-color: #fff;
+  box-shadow: 0px -1px 4px -3px;
+  overflow: scroll;
+}
+
+.paper-table {
+  position: relative;
+}
+
+.table-content {
+  position: relative;
+  overflow: scroll;
+  max-height: 700px;
+  table {
+    thead tr:nth-child(1) th{
+      background: white;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+  }
+}
+
+thead th.fixed-column {
+  z-index: 100 !important;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+  height: 15px;
+}
+::-webkit-scrollbar-thumb {
+  background: #aaa;
+  border-radius: 10px;
+}
+
+.toolbar-title {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  span {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.search-form {
+  width: 40%;
+}
+
+.fixed-column {
+  position: sticky;
+  left: 0;
+}
+
+tbody > tr:nth-of-type(odd) > .fixed-column {
+  background-color: #f5f5f5;
+}
+
+tr > .fixed-column, th > .fixed-column, td > .fixed-column {
+  background: #fff;
+  box-shadow: 2px 1px 1px -3px;
+  z-index: 1;
+}
+
+.key-column.fixed-column {
+  left: 65px;
+}
+
+td.pr-column, th.pr-column {
+  text-align: center;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(0, 0, 255, 0.6);
+  border-radius: 50%;
+  margin-left: 16px;
+  color: #fff;
+}
+
+.table-title {
+  display: flex;
+  padding: 14px 24px 0;
+}
+
+.sort-filter span {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
